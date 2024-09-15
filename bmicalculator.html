@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Health Awareness for Gen Alpha</h1>
+        <p>Promoting healthy eating habits and lifestyle choices for the Alpha Generation.</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="healthinfo.html">Health Info</a>
+        <a href="bmicalculator.html">BMI Calculator</a>
+    </nav>
+    <main>
+        <section>
+            <h2>What is BMI?</h2>
+            <p>Body Mass Index (BMI) is a measure of body fat based on height and weight.</p>
+        </section>
+        <section>
+            <h2>Calculate Your BMI</h2>
+            <form id="bmiForm">
+                <h3>Healthy Weight BMI Calculator</h3>
+                <p>Body Mass Index (BMI) is calculated using a person's weight and height. BMI is a useful measurement of growth for most people, but it is only an estimate. It is not able to differentiate between body fat and muscle mass. BMI may not be appropriate for people, particularly children, with certain health conditions such as some endocrine or genetic conditions. Talk to a health practitioner about your weight if you have any questions or concerns.</p>
+
+                <p>This calculator is not appropriate if you are more than 10 weeks pregnant, or for children under 2 years old.</p>
+
+                <div class="form-group">
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="date" id="birthdate" name="birthdate" value="2023-11-24">
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height">
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight">
+                </div>
+
+                <div class="form-group">
+                    <label for="sex">Sex:</label>
+                    <select id="sex" name="sex">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+                <p id="result"></p>
+            </form>
+        </section>
+        <section>
+            <h2>BMI Categories</h2>
+            <ul>
+                <li>Underweight: BMI < 18.5</li>
+                <li>Normal weight: BMI 18.5–24.9</li>
+                <li>Overweight: BMI 25–29.9</li>
+                <li>Obesity: BMI 30 or greater</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Health Awareness for Gen Alpha</p>
+    </footer>
+</body>
+</html>
